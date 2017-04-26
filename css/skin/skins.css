@@ -1,0 +1,36 @@
+/* CSS Document */
+/*********************************************************************************************
+Description: Varicose Vein Centers - Master Stylesheet
+Author: Metatagg Solutions Pvt. Ltd.
+Author URI: www.metataggsolutions.com
+**********************************************************************************************
+Designed and Built by Metatagg Solutions Pvt. Ltd. - www.metataggsolutions.com
+CSS, HTML and Design Files are all Copyright 2014-2015 Metatagg Solutions. 
+And God said "Let there be code..."
+**********************************************************************************************/
+::-moz-selection {background:#0067ac;}
+::selection {background:#0067ac;}
+
+.navigation li ul li a:hover,
+.navigation li ul li.current_page_item > a,
+.navigation > ul > li:hover li:hover > a {background-color:#e58025;}
+.tparrows:hover{background-color:#424242;}
+
+.color,
+.navigation > ul > li:hover > a,
+#footer a:hover,
+#footer-bottom a,
+#footer-bottom .navigation-footer > ul > li > a:hover,
+.section-title h6,
+.page-404 h2,
+.navigation_mobile > ul li:hover > a,
+.navigation_mobile > ul li:hover:before,
+.navigation_mobile > ul li:hover > a > span i,
+.navigation_mobile_click:hover,
+.navigation_mobile_click:hover:before{color: #323232;}
+
+.navigation_mobile > ul {
+	border-color: #e58024;
+	}
+.navigation > ul > li:hover,
+.navigation > ul > li.current_page_item {border-top-color: #bf220f;}
