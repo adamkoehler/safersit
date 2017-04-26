@@ -1,0 +1,8 @@
+.error {
+    color: #FB3A3A;
+    display: inline-block;
+    padding: 0;
+    text-align: left;
+    width: 300px;
+	font-weight:normal;
+}
