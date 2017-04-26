@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> :: Safer Sit ::</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet" media="screen">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="wrap" class="grid_1200">
+        <header class="header sticky">
+            <div class="container clearfix">
+                <div class="logo">
+                    <a href="#wrap" class="section-scroll"><img src="images/logo.png" alt="Safer Sit" title="Safer Sit">
+                    </a>
+                </div>
+                <a id="menu-tog" href="#"><span class="base-bg-color"></span></a>
+                <nav id="navigation" role="navigation">
+                    <ul>
+                        <li><a href="#bookasit" class="section-scroll">Book A Sit </a>
+                        </li>
+                        <li><a href="#parents" class="section-scroll">How It Works - Parents</a>
+                        </li>
+                        <li><a href="#sitter" class="section-scroll">How It Works - Sitter</a>
+                        </li>
+                        <li><a href="#whoweare" class="section-scroll">Who We Are</a>
+                        </li>
+                        <li><a href="#contact" class="section-scroll">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="clearfix"></div>
+        <section class="mbr-section--bg-adapted mbr-parallax-background" style="background-image:url(images/cover.jpg);">
+            <div class="parallax-overlay homepage"></div>
+            <div class="container">
+                <div class="intro_text">
+                    <h1 class="hero_text">Caring Babysitters<br> Ready to Help<br> Day & Night</h1>
+                    <p class="hero_sub">SaferSit is the easier and safer way
+                        <br> to book a babysitter in and around
+                        <br> the Cincinnati area.</p>
+                </div>
+            </div>
+            <!-- container -->
+        </section>
+        <section id="bookasit" class="sections orange">
+            <div class="container">
+                <div class="sections-title white">
+                    <h2>Book a Sit</h2>
+                    <p>SaferSit is the easier and safer way to book a babysitter in and around the Cincinnati area.</p>
+                </div>
+<div id="Store_Infobook" class="result_successbook"></div>
+                
+<form action="" method="post" id="bookasitregister-form" novalidate class="bookasit">                                        
+                    <div class="row">
+                    <div class="col-md-6 from_group">
+                    <label>NAME</label>
+<input id="name" name="bname" type="text" onfocus="this.placeholder=''" onblur="this.placeholder='John Smith'" placeholder="John Smith">
+                    </div>
+                    <div class="col-md-6 from_group">
+                    <label>EMAIL</label>
+<input id="email" name="bemail" type="text" onfocus="this.placeholder=''" onblur="this.placeholder='john.smith@safersit.com'" placeholder="john.smith@safersit.com">
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-sm-7 from_group">
+                                    <label>DATE</label>
+
+                                    <div class="input-group date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+<input class="" name="bdate" size="16" type="text" value=""  onfocus="this.placeholder=''" onblur="this.placeholder='16-09-16'"   placeholder="16-09-16" readonly>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                    <input type="hidden" id="dtp_input2" value="" />
+                                </div>
+                                <div class="col-sm-5 from_group">
+                                    <label>TIME</label>
+                                    <div class="input-group date form_time" data-date="" data-date-format="hh:ii" data-link-field="dtp_input3" data-link-format="hh:ii">
+<input class="" size="16" name="btime" type="text" value="" onfocus="this.placeholder=''" onblur="this.placeholder='21:00'"  placeholder="21:00" readonly>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+                                    </div>
+                                    <input type="hidden" id="dtp_input3" value="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-sm-7 from_group">
+                                    <label>PART OF TOWN</label>
+                                    <select id="partoftown" name="bpartoftown" placeholder="Cincinnati" class="sitselect">
+                                        <option value="c1">Cincinnati</option>
+                                        <option value="c2">Cincinnati</option>
+                                        <option value="c3">Cincinnati</option>
+                                        <option value="c4">Cincinnati</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-5 from_group">
+                                    <label>KIDS</label>
+                                    <select id="kids" placeholder="5" class="sitselect" name="kids">
+                                        <option value="kids1"> 1 </option>
+                                        <option value="kids2"> 2 </option>
+                                        <option value="kids3"> 3 </option>
+                                        <option value="kids4"> 4 </option>
+                                        <option value="kids5"> 5 </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 from_group">
+                            <label>MESSAGE</label>
+            <textarea cols="2"  rows="2" name="bcomment" onfocus="this.placeholder=''" onblur="this.placeholder='Type your message to SaferSit here'"  placeholder="Type your message to SaferSit here"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                        <input type="submit" value="Submit" name="Submit" class="ssbtn submit">                                              
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+    <script>    
+        
+        </script>        
+        
+        
+        <section id="parents">
+            <div class="row no-gutters">
+                <div class="col-sm-6">
+                    <div class="fullboximg"><img src="images/how_this_works.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="fullboxtext">
+                        <h2>How this Works - Parents</h2>
+                        <p>SaferSit was created to help make finding a babysitter an easier process. We are currently working on developing an app so that scheduling your sitter is even simpler.</p>
+                        <p>You will be able to background check, interview, and schedule a sitter all on our app! Until the app is complete, <a href="#">click here</a> to book your next sit.</p>
+                        <a href="#bookasit" class="ssbtn section-scroll">Book a sitter</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sections grey">
+            <div class="container">
+                <div class="sections-title">
+                    <h2>Rates</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-27 col-sm-4 ratebox">
+                        <div class="circle">
+                            <div class="ratetext">
+                                1-2 Kids
+                                <br><span>$10</span>/hr
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-27 col-sm-4 ratebox orange">
+                        <div class="circle">
+                            <div class="ratetext">
+                                3-4 kids
+                                <br><span>$12</span>/hr
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-27 col-sm-4 ratebox">
+                        <div class="circle">
+                            <div class="ratetext">
+                                5 kids
+                                <br><span>$14</span>/hr
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="condition">*if your kids need to be driven somewhere or you have more than 5 kids please email us at SaferSit@yahoo.com</div>
+            </div>
+        </section>
+        <section id="sitter" class="howitworks_sitter parallax-bg" style="background-image:url(images/sitter_bg.jpg);">
+            <div class="parallax-overlay sitterbg"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <h2>How It Works - Sitter</h2>
+                        <p>Are you a responsible college or high school student who loves kid? SaferSit wants you! Apply today by clicking here.</p>
+                        <p>After going through our application process, we will connect you with babysitting jobs using GroupMe.</p>
+                        <a href="#bookasit" class="ssbtn white section-scroll">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sections blue">
+            <div class="container">
+                <div id="testimonial" class="owl-carousel ss-carousel">
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="testimonial_left">
+                                    <div class="img"><img src="images/kristen_schlotman.jpg" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Kristen Schlotman</span>Saint Ursula Villa mom
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="testimonial_right"> SaferSit has been a life saver. My husband and I work non-traditional hours and to have a first class business at our fingertips (that Francie and her team have derived), is invaluable. Our children are our number one priority and the SaferSit employees surpass any other child care providers we have ever tried. </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="testimonial_left">
+                                    <div class="img"><img src="images/elizabeth_mcLaughlin.png" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Elizabeth McLaughlin</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="testimonial_right"> SaferSit combines the ease of reaching out only one time to find help with the comfort of knowing a vetted, experienced and enthusiastic sitter will arrive to watch your children. I had been using SaferSit for many years for my own children and now my husband and I use this service for our big blended family of seven! We have recommended SaferSit to many happy friends. This service is a real lifesaver for the busy, active family with a full calendar! </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="whoweare">
+            <div class="row no-gutters">
+                <div class="col-sm-6">
+                    <div class="fullboxtext francie_laura">
+                        <h4>Who We Are</h4>
+                        <h2>Francie and Laura</h2>
+                        <p>Francie and Laura are the Co-Founders of SaferSit, LLC. Francie is a college student at the University of Cincinnati and Laura is a local mom with two kids living in Mt. Lookout. They came up with the idea for SaferSit after Laura used Francie’s Saint Ursula babysitting club in 2013.</p>
+                        <p>Francie saw a need connecting high schoolers with jobs and Laura needed a safer way to find a babysitter that she trusted. Together, they created SaferSit to fill the babysitting needs of families in and around the Cincinnati area.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="fullboximg francie_laura"><img src="images/francie_and_laura.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        <section id="contact" class="sections grey">
+            <div class="container">
+                <div id="Store_Info" class="result_success"></div>
+                <div class="sections-title">
+                    <h2>Contact Us With Questions or Comments</h2>
+                </div>
+                <form action="" method="post" id="register-form" novalidate class="contact">                    
+                    <div class="row">
+                        <div class="col-md-4 from_group">
+                            <label>NAME</label>
+<input id="cname" name="firstname" type="text" onfocus="this.placeholder=''" onblur="this.placeholder='John Smith'" placeholder="John Smith">
+                        </div>
+                        <div class="col-md-4 from_group">
+                            <label>EMAIL</label>
+<input id="cemail" name="cemail" type="text"  onfocus="this.placeholder=''" onblur="this.placeholder='john.smith@safersit.com'" placeholder="john.smith@safersit.com">
+                        </div>
+                        <div class="col-md-4 from_group">
+                            <label>PHONE</label>
+                            <input id="phone" name="phone" type="text" onfocus="this.placeholder=''" onblur="this.placeholder='999 888 7777'" placeholder="999 888 7777">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 from_group">
+                            <label>MESSAGE</label>
+    <textarea cols="2" rows="2" name="message" onfocus="this.placeholder=''" onblur="this.placeholder='Type your message to SaferSit here'" placeholder="Type your message to SaferSit here"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <input type="submit" value="Submit" name="Submit" class="ssbtn fill">                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+        
+        
+        
+        
+        <footer id="footer">
+            <div class="container">
+                <p> Copyright &copy; 2016 Safer Sit. All Rights Reserved. Photos courtesy of Erica Floyd </p>
+            </div>
+        </footer>
+    </div>
+    <div class="go-up"><i class="fa fa-chevron-up"></i>
+    </div>
+    <!--End Site wrap-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js" charset="UTF-8"></script>
+    <script type="text/javascript">
+        $('.form_date').datetimepicker({
+            language: 'en',
+            weekStart: 1,
+            todayBtn: 1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            minView: 2,
+            forceParse: 0
+        });
+        $('.form_time').datetimepicker({
+            language: 'en',
+            weekStart: 1,
+            todayBtn: 1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 1,
+            minView: 0,
+            maxView: 1,
+            forceParse: 0
+        });
+    </script>
+    
+    
+  
+    
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript">
+(function($,W,D)
+{
+    var JQUERY4U = {};
+
+    JQUERY4U.UTIL =
+    {
+        setupFormValidation: function()
+        {
+            //form validation rules
+            $("#register-form").validate({
+                rules: {
+                    firstname: "required",
+                      cemail: {
+                      required: true,
+                      email: true,
+			           },
+                    phone: "required",
+					'requestmsg[]': {
+						required: true
+					}
+                },
+                messages: {
+                    firstname: "Please enter your name",
+                    cemail: "Invalid Email Address",
+                    phone: "Please enter your phone"
+                },
+				
+				submitHandler: function(form) {
+				// do other stuff for a valid form
+				$.post('send_emailcontactus.php', $("#register-form").serialize(), function(str) {
+					if(str == 1)
+					{
+					$('#Store_Info').html("Message Sent successfully");
+                    $("#register-form")[0].reset();
+					}else 
+					{
+	//					$('#Store_Info').addClass("result_error");
+
+						$('#Store_Info').html(str);
+					}
+				});
+			}
+            });
+        }
+    }
+
+    //when the dom has loaded setup form validation rules
+    $(D).ready(function($) {
+        JQUERY4U.UTIL.setupFormValidation();
+    });
+
+})(jQuery, window, document);
+</script>    
+    
+    
+    <script type="text/javascript">
+(function($,W,D)
+{
+    var JQUERY4U = {};
+
+    JQUERY4U.UTIL =
+    {
+        setupFormValidation: function()
+        {
+            //form validation rules
+            $("#bookasitregister-form").validate({
+                rules: {
+                    bname: "required",
+                      bemail: {
+                      required: true,
+                      email: true,
+			           },
+                bdate: "required",    
+                btime: "required"
+                },
+                messages: {
+                    bname: "Please enter your name",
+                    bemail: "Invalid Email Address",
+                },
+				
+				submitHandler: function(form) {
+				// do other stuff for a valid form
+				$.post('send_emailbook.php', $("#bookasitregister-form").serialize(), function(str) {
+					if(str == 1)
+					{
+					$('#Store_Infobook').html("Message Sent successfully");
+                    $("#bookasitregister-form")[0].reset();
+					}else 
+					{
+	//					$('#Store_Info').addClass("result_error");
+
+						$('#Store_Infobook').html(str);
+					}
+				});
+			}
+            });
+        }
+    }
+    //when the dom has loaded setup form validation rules
+    $(D).ready(function($) {
+        JQUERY4U.UTIL.setupFormValidation();
+    });
+})(jQuery, window, document);
+</script>    
+   
+    
+    
+    
+    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+    <script src="js/jarallax.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script>
+        $("#testimonial").owlCarousel({
+            navigation: false,
+            pagination: true,
+            navigationText: ["", ""],
+            singleItem: true,
+            autoHeight: true,
+        });
+    </script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
